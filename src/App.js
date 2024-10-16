@@ -1,11 +1,12 @@
 import "./App.css";
-import SideBar from "./components/sideBar";
-import { fileData } from "./constant";
+import Header from "./components/Header";
+import Features from "./components/sideBar";
 
 function App() {
   return (
     <div>
-      <SideBar data={fileData} />
+      <Header />
+      <Features />
     </div>
   );
 }
