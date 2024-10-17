@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import { analytics } from "../../App";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Welcome to Our Landing Page</h1>
+      <button onClick={() => analytics.track("hello world")}>Track</button>
       <p>Discover amazing features below!</p>
     </div>
   );
-}
+};
 
 export default Header;

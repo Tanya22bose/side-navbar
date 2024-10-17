@@ -1,16 +1,40 @@
-import React from 'react';
+import React from "react";
 
 const Features = () => {
   return (
     <div className="features">
       <h2>Key Features</h2>
       <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
+        <button
+          onClick={() =>
+            analytics.identify("clicked feature", {
+              name: "Feature 1",
+            })
+          }
+        >
+          Feature 1
+        </button>
+        <button
+          onClick={() =>
+            analytics.identify("clicked feature", {
+              name: "Feature 2",
+            })
+          }
+        >
+          Feature 2
+        </button>
+        <button
+          onClick={() =>
+            analytics.identify("clicked feature", {
+              name: "Feature 3",
+            })
+          }
+        >
+          Feature 3
+        </button>
       </ul>
     </div>
   );
-}
+};
 
 export default Features;
