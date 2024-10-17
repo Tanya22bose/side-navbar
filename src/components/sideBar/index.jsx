@@ -1,4 +1,5 @@
 import React from "react";
+import { analytics } from "../../App";
 
 const Features = () => {
   return (
